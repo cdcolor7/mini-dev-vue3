@@ -1,0 +1,37 @@
+{
+  "name": "@mini-dev-vue3/compiler-core",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "cdcolor7 <276214101@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.js",
+  "types": "dist/compiler-core.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "buildOptions": {
+    "name": "VueCompilerCore",
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.taobao.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:yiyi520/mini-dev-vue3.git"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@mini-dev-vue3/shared": "^1.0.0"
+  }
+}

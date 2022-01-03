@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mini-dev-vue3</title>
+</head>
+<body>
+  <div id="app">
+    <!-- <h1>{{ msg }}</h1>
+    <div>hello mini dev vue3 !!</div>
+    <child-comp></child-comp> -->
+  </div>
+  <script src="../dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref, h } = Vue
+    const app = createApp({
+      setup() {
+        const msg = ref('min-vue')
+        return {
+          msg
+        }
+      },
+      render() {
+        return h("div", { tId: 1 }, [h("h1", {}, this.msg), h("p", {}, "hello mini dev vue3 !!")]);
+      },
+    })
+    app.mount('#app')
+  </script>
+</body>
+</html>

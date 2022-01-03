@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "sourceMap": false,
+    "target": "es2016",
+    "module": "esnext",
+    "rootDir": ".", 
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "paths":{
+      "@mini-dev-vue3/*": ["packages/*/lib"],
+      "mini-dev-vue3": ["packages/vue/lib"]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@mini-dev-vue3/runtime-core",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "cdcolor7 <276214101@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.js",
+  "types": "dist/runtime-core.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "buildOptions": {
+    "name": "VueRuntimeCore",
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.taobao.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:yiyi520/mini-dev-vue3.git"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

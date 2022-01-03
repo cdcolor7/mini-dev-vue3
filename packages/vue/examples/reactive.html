@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mini-dev-vue3</title>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ msg }}</h1>
+    <div>hello mini dev vue3 !!</div>
+    <child-comp></child-comp>
+  </div>
+  <script src="../dist/vue.global.js"></script>
+  <script>
+    const { createApp, reactive, effect, ref } = Vue
+    
+    let obj1 = reactive({
+      a:1,
+    })
+
+    const refv = ref(0) 
+
+    let effectFn = effect(() => {
+      let b = obj1.a ++ 
+      // let b = refv.value ++
+      console.log(b);
+    })
+
+    setTimeout(() => {
+      obj1.a = 102
+      // refv.value = 101
+    },1000)
+
+
+    
+    
+    
+  </script>
+</body>
+</html>
