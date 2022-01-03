@@ -1,0 +1,10 @@
+{
+  "presets": [["@babel/preset-env", {
+    "targets": {
+      "browsers": ["last 2 versions","> 1%"]
+    }, // 目标浏览器集合
+    "corejs":2, // corejs的版本
+    "useBuiltIns": "usage" // 按需加载
+  }]
+  ]
+}
